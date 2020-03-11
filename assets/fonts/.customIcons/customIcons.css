@@ -1,0 +1,77 @@
+/*@font-face {*/
+/*  font-family: 'icomoon';*/
+/*  src:  url('./customIcons/icomoon.eot?bs15p4');*/
+/*  src:  url('./icomoon.eot?bs15p4#iefix') format('embedded-opentype'),*/
+/*    url('./icomoon.ttf?bs15p4') format('truetype'),*/
+/*    url('./icomoon.woff?bs15p4') format('woff'),*/
+/*    url('./icomoon.svg?bs15p4#icomoon') format('svg');*/
+/*  font-weight: normal;*/
+/*  font-style: normal;*/
+/*  font-display: block;*/
+/*}*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./icomoon.ttf?5z6lgp') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tile:before {
+  content: "\e903";
+}
+.icon-list:before {
+  content: "\e90c";
+}
+.icon-document:before {
+  content: "\e90d";
+}
+.icon-hammer:before {
+  content: "\e905";
+}
+.icon-wrench:before {
+  content: "\e900";
+}
+.icon-phone:before {
+  content: "\e901";
+}
+.icon-map-position:before {
+  content: "\e902";
+}
+.icon-kite:before {
+  content: "\e904";
+}
+.icon-graduation-cap:before {
+  content: "\e906";
+}
+.icon-globe:before {
+  content: "\e907";
+}
+.icon-gear:before {
+  content: "\e908";
+}
+.icon-family:before {
+  content: "\e909";
+}
+.icon-cash:before {
+  content: "\e90a";
+}
+.icon-case:before {
+  content: "\e90b";
+}

@@ -1,0 +1,71 @@
+@import "~/assets/styles/general/variables.scss";
+
+@import "./header-user";
+
+.main-header {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding-right: 23px;
+	border-bottom: 1px solid $bnw-40;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	width: 269px;
+	height: 100%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 58px;
+	
+	img {
+		height: 100%;
+	}
+}
+.shortcuts {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	
+	i {
+		font-size: 18px;
+		color: $bnw-30;
+		
+		& + i {
+			margin-left: 12px;
+		}
+	}
+	
+	svg {
+		&:nth-child(1) {
+			width: 20px;
+			height: 12px;
+			transform: rotate(90deg);
+			
+			& + svg {
+				margin-left: 10px;
+				
+				& + svg {
+					margin-left: 14px;
+				}
+			}
+		}
+		&:nth-child(2) {
+			width: 16px;
+			height: 20px;
+		}
+		&:nth-child(3) {
+			width: 20px;
+			height: 14px;
+		}
+	}
+}
+
+.current-user {
+	height: 100%;
+	margin-left: 20px;
+}
+
+.header-side-menu {
+
+}

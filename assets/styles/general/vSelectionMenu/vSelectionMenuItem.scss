@@ -1,0 +1,75 @@
+@import  "~/assets/styles/general/variables.scss";
+
+
+.selection-menu__item {
+	position: relative;
+	
+	&[active] {
+		
+		.selection-menu__pseudo-input {
+			&_radio {
+				background-color: $color-10;
+			}
+		}
+		.selection-menu__inner-label {
+			color: $bnw-00;
+		}
+	}
+}
+.selection-menu__input {
+	position: absolute;
+	z-index: -1;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.selection-menu__label {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.selection-menu__pseudo-input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+	border: 1px solid $bnw-40;
+	
+	&_radio {
+		background-color: $bnw-90;
+		border-radius: 50%;
+		transition: 200ms;
+		
+		.selection-menu__pseudo-input-inner {
+			width: 6px;
+			height: 6px;
+			background-color: #fff;
+			border: 1px solid $bnw-40;
+			border-radius: 50%;
+			box-sizing: unset;
+		}
+	}
+	&_checkbox {
+		border-color: $color-40;
+		border-radius: 4px;
+		
+		.selection-menu__pseudo-input-inner {
+			font-size: 8px;
+			color: $color-41;
+		}
+	}
+}
+.selection-menu__inner-label {
+	margin-left: 12px;
+	font-family: $roboto-light;
+}
+.selection-menu__description {
+	padding-left: 28px;
+	margin-top: 6px;
+	font-family: $helvetica-neue-cyr-light;
+	font-size: 13px;
+	letter-spacing: -0.3px;
+	color: #999997;
+	cursor: default;
+}

@@ -1,0 +1,235 @@
+@import  "~/assets/styles/general/general.scss";
+
+.profile {
+  &__main {
+    &-img {
+      width: 209px;
+      height: 213px;
+      margin-right: 32px;
+    }
+
+    &-profession {
+      font-size: 15px;
+      color: #307592;
+      font-family: $proxima-bold;
+      margin-bottom: 46px;
+      margin-left: 0;
+    }
+
+    &-block {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &-name {
+      font-size: 28px;
+      margin: 0;
+      font-family: $proxima-bold;
+      color: $bnw-10;
+    }
+
+    &-surname {
+      font-size: 28px;
+      margin: 0;
+      font-family: $roboto-light;
+      margin-bottom: 33px;
+    }
+
+    &-bar {
+      margin: auto;
+      margin-left: 0;
+
+      &_number {
+        font-family: $roboto-thin;
+        color: $bnw-00;
+        font-size: 23px;
+        margin-top: 3px;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    &-row {
+      border-right: 1px solid $bnw-40;
+      height: 242px;
+    }
+  }
+
+  &__contacts {
+    margin-left: 60px;
+
+    &-phone {
+      font-size: 15px;
+      display: block;
+      margin-top: 53px;
+      color: #000000;
+    }
+
+    &-email {
+      font-size: 15px;
+      display: block;
+      margin-top: 40px;
+      color: #000000;
+    }
+
+    &-link {
+      font-size: 15px;
+      display: block;
+      color: #43A5D2;
+      font-family: $roboto-light;
+      margin-top: 41px;
+    }
+
+    &-question {
+      background: $bnw-50;
+      color: $bnw-30;
+      border-radius: 10px;
+      padding: 0 6px;
+      display: inline-block;
+      font-size: 13px;
+    }
+  }
+
+  &__table {
+    margin-top: 85px;
+    max-width: 900px;
+
+    &-string {
+      padding: 1rem;
+      vertical-align: top;
+      margin-bottom: 0;
+      margin-top: 0;
+      color: #656565;
+      font-family: $roboto;
+
+      &:first-child {
+        background-color: #f0f5f7;
+        border: 1px solid #e8e6e6;
+      }
+    }
+  }
+
+  &__clear-block {
+    position: relative;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    &::after {
+      content: '+';
+      position: absolute;
+      top: 0;
+      left: -5px;
+      padding-bottom: 7px;
+      background: white;
+      font-size: 20px;
+      font-family: $roboto-light;
+      color: $bnw-00;
+    }
+
+    &_title {
+      font-family: $roboto;
+      color: #5C5B5B;
+      font-size: 17px;
+      position: relative;
+      padding-bottom: 10px;
+      margin-left: 20px;
+
+      &::before {
+        content: '';
+        border-bottom: 2px solid #999997;
+        position: absolute;
+        left: 0;
+        width: 20px;
+        bottom: 1px;
+      }
+
+      &::after {
+        content: '';
+        border-bottom: 1px solid #c7c7c7;
+        position: absolute;
+        left: 0;
+        width: 250px;
+        bottom: 0;
+      }
+    }
+
+    &_languages {
+      padding-left: 40px;
+      margin-top: 40px;
+
+      &-image {
+        width: 100%;
+        border: 1px solid $bnw-50;
+        width: 76px;
+        height: 50px;
+      }
+
+      &-title {
+        margin: 0;
+        color: #000000;
+        font-size: 15px;
+
+      }
+
+      &-level {
+        margin: auto;
+        margin-left: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        font-size: 15px;
+        color: #414141;
+        width: 200px;
+        font-family: $roboto-light;
+      }
+
+      &-row {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &_hobbies {
+      max-width: 550px;
+    }
+
+    &_about-me {
+      &-text {
+        color: #8a8a8a;
+        font-family: $roboto-thin;
+      }
+    }
+
+    &-list {
+      position: relative;
+      padding-left: 40px;
+
+      &_title {
+        color: #000000;
+        position: relative;
+        margin-top: 40px;
+        font-size: 15px;
+        font-family: $roboto;
+      }
+
+      &_item {
+        margin-left: 30px;
+        font-size: 15px;
+        color: #414141;
+        font-family: $roboto-light;
+        max-width: 750px;
+        margin-bottom: 15px;
+      }
+
+      &_desc {
+        color: $bnw-00;
+        margin-left: 30px;
+        font-size: 15px;
+        font-family: $roboto;
+      }
+    }
+  }
+}

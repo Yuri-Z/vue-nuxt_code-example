@@ -1,0 +1,140 @@
+@import  "~/assets/styles/general/general.scss";
+
+.profile__clear-block_title {
+  font-family: "Roboto Regular", "Roboto", sans-serif;
+  color: #5C5B5B;
+  font-size: 17px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-left: 20px;
+
+  &::before {
+    content: '';
+    border-bottom: 2px solid #999997;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    bottom: 1px;
+  }
+
+  &::after {
+    content: '';
+    border-bottom: 1px solid #c7c7c7;
+    position: absolute;
+    left: 0;
+    width: 250px;
+    bottom: 0;
+  }
+}
+
+.profile__clear-block_socials {
+  &-svg {
+    fill: #c7c7c7;
+    transition: fill 0.2s;
+    margin-right: 10px;
+  }
+
+  &-block {
+    transition: color 0.2s;
+    color: #414141;
+    font-size: 15px;
+    margin-right: 20px;
+    display: flex;
+    font-family: $roboto-light;
+    align-items: center;
+  }
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-top: 20px;
+    align-items: center;
+  }
+
+  &-inst {
+    .profile__clear-block_socials-svg {
+      width: 18px;
+    }
+
+    &:hover {
+      color: #E218F5;
+
+      .profile__clear-block_socials-svg {
+        fill: #E218F5;
+      }
+    }
+  }
+
+  &-ok {
+    .profile__clear-block_socials-svg {
+      width: 13px;
+    }
+
+    &:hover {
+      color: #E8820E;
+
+      .profile__clear-block_socials-svg {
+        fill: #E8820E;
+      }
+    }
+  }
+
+
+  &-vk {
+    .profile__clear-block_socials-svg {
+      width: 22px;
+    }
+
+    &:hover {
+      color: #0E699B;
+
+      .profile__clear-block_socials-svg {
+        fill: #0E699B;
+      }
+    }
+  }
+
+  &-twitter {
+    .profile__clear-block_socials-svg {
+      width: 20px;
+    }
+
+    &:hover {
+      color: #60aad2;
+
+      .profile__clear-block_socials-svg {
+        fill: #60aad2;
+      }
+    }
+  }
+
+  &-youtube {
+    .profile__clear-block_socials-svg {
+      width: 22px;
+    }
+
+    &:hover {
+      color: #EB0202;
+
+      .profile__clear-block_socials-svg {
+        fill: #EB0202;
+      }
+    }
+  }
+
+  &-ir {
+    .profile__clear-block_socials-svg {
+      width: 16px;
+    }
+
+    &:hover {
+      color: #159EE8;
+
+      .profile__clear-block_socials-svg {
+        fill: #159EE8;
+      }
+    }
+  }
+}

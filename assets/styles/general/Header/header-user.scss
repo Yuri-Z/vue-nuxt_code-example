@@ -1,0 +1,50 @@
+.user {
+	height: 100%;
+	margin-left: 20px;
+}
+.user__avatar {
+	height: 100%;
+}
+
+.page-header__user-menu {
+  position: absolute;
+  top: 67px;
+  right: 18px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.7);
+  display: none;
+
+  &.shown {
+    display: block;
+  }
+}
+.page-header__user-info {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #6d9db3;
+
+  & > * + * {
+    margin-left: 16px;
+  }
+}
+.page-header__user-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+
+  &:hover {
+    background-color: #E4E4E4;
+  }
+  i {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+  }
+  & > * + * {
+    margin-left: 16px;
+  }
+}

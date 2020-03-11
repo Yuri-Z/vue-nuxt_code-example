@@ -1,0 +1,91 @@
+.slider {
+  position: relative;
+
+  &__conatiner {
+    overflow: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 138px;
+    padding-top: 10px;
+    background-color: transparent;
+    position: relative;
+    top: 1px;
+    z-index: 1;
+
+    &_images {
+      transition: margin 0.5s;
+    }
+
+    &_image {
+      display: inline-block;
+      width: 200px;
+      height: 110px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 90% 85%;
+      border: 1px solid #e8e6e6;
+      vertical-align: top;
+      cursor: pointer;
+      margin: 5px 10px 0px 10px;
+
+      &-current {
+        border-bottom: 0;
+        height: 130px;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: white;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 10;
+    background: none;
+    border: none;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
+
+    &-left {
+      left: 0;
+    }
+
+    &-right {
+      right: 0;
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+
+    svg {
+      height: 56px;
+      stroke-width: 0;
+      fill-opacity: 1;
+      stroke: #5E97FF;
+      stroke-opacity: 1;
+      fill: rgba(189, 227, 243, 1);
+    }
+
+    &-unactive {
+      svg {
+        fill: rgba(232, 230, 230, 1);
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

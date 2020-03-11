@@ -1,0 +1,62 @@
+@import "~/assets/styles/general/variables.scss";
+
+.resume-block {
+	.input {
+		font-family: $roboto-light;
+	}
+	&__right-half {
+		position: absolute;
+		left: 518px;
+	}
+	&__right-column, &__right-quarter {
+		position: absolute;
+		left: 220px;
+	}
+	&__input-add {
+		width: 36px;
+		i {
+			color: $color-10;
+		}
+	}
+	&__input-200 {
+		width: 200px;
+	}
+	
+	&__birthday-date {
+		height: 100%;
+		
+		.birthday-date__day {
+			width: 50px;
+		}
+		.birthday-date__month {
+			width: 100px;
+		}
+		.birthday-date__year {
+			width: 50px;
+		}
+	}
+	&__sex-selection {
+		display: flex;
+		
+		& > * + * {
+			margin-left: 36px;
+		}
+	}
+	&__citizenship {
+		&-current {
+			width: 200px;
+		}
+	}
+	&__city {
+		height: 100%;
+	}
+	&__competencies {
+	
+	}
+	&__desired-salary {
+		&-amount {}
+		&-currency {
+			margin-left: 30px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@import  "~/assets/styles/general/variables.scss";
+
+.header-menu {
+	height: 100%;
+}
+.header-menu__inner {
+	display: flex;
+	height: 100%;
+}
+.header-menu__item-wrapper {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	border-bottom: 1px solid transparent;
+	
+	&[active] {
+		border-bottom-color: rgb(0, 142, 159);
+		
+		.header-menu__item {
+			color: rgb(0, 142, 159);
+		}
+	}
+}
+.header-menu__item {
+	padding: 7px 27px;
+	font-family: $roboto;
+	font-size: 14px;
+	color: $bnw-30;
+	text-transform: uppercase;
+	border-left: 1px rgb(232, 230, 230) solid;
+}

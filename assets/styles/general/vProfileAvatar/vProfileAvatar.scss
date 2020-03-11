@@ -1,0 +1,48 @@
+@import "~/assets/styles/general/variables.scss";
+
+@import "vProfileAvatarForHeader";
+@import "vProfileAvatarForSidebar";
+
+.profile-avatar {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+.profile-avatar__image {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.profile-avatar__inner-circle {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	
+	.circle-progress {
+		stroke: $color-11;
+	}
+}
+.profile-avatar__outer-circle {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	
+	.circle-progress {
+		stroke: $color-13;
+	}
+}
+.circle-progress {
+	transition: 1000ms cubic-bezier(.17,.54,.59,.93);
+	fill: transparent;
+	stroke-width: 4px;
+}
+.circle-base {
+	fill: transparent;
+	stroke: $bnw-70;
+	stroke-width: 4px
+}

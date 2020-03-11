@@ -1,0 +1,120 @@
+@import  "~/assets/styles/general/general.scss";
+
+.profile__portfolio {
+  border: 1px solid #e8e6e6;
+  margin: 80px 0;
+  box-shadow: 5px 5px 5px #dcdcdc;
+
+  &_header {
+    padding: 20px 15px;
+    border-bottom: 1px solid #e8e6e6;
+
+    &-title {
+      margin: 0;
+      color: #5C5B5B;
+      font-family: $roboto-light;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    &-subtitle {
+      font-size: 14px;
+      margin-bottom: 0;
+      color: #999997;
+      font-family: $roboto-light;
+    }
+  }
+}
+
+.portfolio {
+  height: 470px;
+  border-top: 1px solid #e8e6e6;
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    max-width: 550px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 84px;
+  }
+
+  &__body {
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 500px;
+      left: 0;
+      height: 80px;
+      top: 0;
+      z-index: 10;
+      background: white;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 500px;
+      left: 0;
+      height: 70px;
+      bottom: 0;
+      z-index: 10;
+      background: white;
+    }
+  }
+
+  &__content {
+    padding-left: 65px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+    &_title {
+      color: $bnw-00;
+      border-bottom: 1px solid #e8e6e6;
+      padding-bottom: 15px;
+      font-family: $roboto;
+      margin: 0;
+      font-size: 15px;
+      width: 350px;
+      z-index: 1;
+
+      &-current {
+        background: white;
+        position: absolute;
+      }
+    }
+
+    &_text {
+      width: 350px;
+
+      &:last-child {
+        .portfolio__content_desc {
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &_desc {
+      font-family: $roboto;
+      color: $bnw-20;
+      font-size: 15px;
+      margin: 0;
+      padding-bottom: 40px;
+      padding-top: 15px;
+
+      &-current {
+        padding-top: 49px;
+
+        &-big {
+          padding-top: 67px;
+        }
+      }
+    }
+  }
+}

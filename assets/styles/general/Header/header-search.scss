@@ -1,0 +1,38 @@
+.header-search {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 28px;
+	padding: 0 85px 0 12px;
+	margin-right: 60px;
+	margin-left: auto;
+	border-bottom: 1px solid #43A5D2;
+}
+.header-search__line {
+	width: 301px;
+	border: 0;
+	
+	&::placeholder {
+		color: #C7C7C7;
+	}
+}
+.header-search__button {
+	position: absolute;
+	right: 8px;
+	display: flex;
+	align-items: baseline;
+	padding: 4px;
+	font-family: roboto-thin,roboto,sans-serif;
+	font-size: 12px;
+	color: #43A5D2;
+	text-transform: uppercase;
+	cursor: pointer;
+	
+	&:hover {}
+	
+	i {
+		width: 14px;
+		height: 14px;
+		margin-right: 8px;
+	}
+}

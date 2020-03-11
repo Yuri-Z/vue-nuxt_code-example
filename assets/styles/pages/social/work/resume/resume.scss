@@ -1,0 +1,109 @@
+@import "~/assets/styles/general/variables.scss";
+@import "resume-tiles";
+@import "resume-block";
+
+.resume {
+	width: 100%;
+	padding-top: 30px !important;
+}
+.resume__view {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	height: 20px;
+	margin-top: 10px;
+	color: $bnw-40;
+	cursor: default;
+	
+	i {
+		margin-right: 6px;
+		cursor: pointer;
+		
+		&.icon-list {
+			font-size: 20px;
+		}
+		&.icon-tile {
+			margin-right: 2px;
+			margin-left: 10px;
+			font-size: 18px;
+		}
+		&[active] {
+			color: $color-10;
+		}
+	}
+}
+.resume__tiles, .resume__list {
+	width: 100%;
+}
+.resume__list {
+	width: calc(100% - 57px);
+	margin-top: 60px;
+}
+
+.resume-border {
+	border: 1px solid $bnw-50;
+	box-shadow: 5.88px 8.09px 8px 0 rgba(0,0,0,0.08);
+}
+
+/**
+ * ==================================================================================
+ * Rectangle
+ * ==================================================================================
+ */
+.resume__rectangle {
+	padding: 18px;
+	
+	&_vertical {
+		//width: 46.75%;
+		width: 522px;
+		height: 217px;
+		
+		.resume__rectangle-item + .resume__rectangle-item {
+			margin-top: 12px;
+		}
+	}
+	&_horizontal {
+		width: 100%;
+		.resume__rectangle-menu {
+			display: flex;
+			align-items: center;
+		}
+		.resume__rectangle-item + .resume__rectangle-item {
+			margin-left: 12px;
+		}
+	}
+}
+.resume__rectangle-title {
+	font-size: 17px;
+	color: $bnw-10;
+	cursor: default;
+}
+.resume__rectangle-menu {
+	padding: 24px;
+	
+}
+.resume__rectangle-item {
+	font-family: $roboto-light;
+	font-size: 15px;
+}
+.resume__rectangle-radio {
+	color: $bnw-00;
+	
+	input {
+		cursor: pointer;
+	}
+	label {
+		//margin-left: 8px;
+		cursor: pointer;
+	}
+}
+.resume__rectangle-description {
+	margin-top: 6px;
+    margin-left: 28px;
+	font-family: $helvetica-neue-cyr-light;
+	font-size: 13px;
+	letter-spacing: -0.3px;
+	cursor: default;
+}

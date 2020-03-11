@@ -1,0 +1,45 @@
+@import "~/assets/styles/general/variables.scss";
+
+.work {
+	width: 100%;
+	
+	//font-family: "Roboto Light";
+	//font-style: normal;
+	//font-weight: normal;
+}
+.section-header {
+
+	letter-spacing: -1px;
+}
+.section-header__primary {
+	display: flex;
+	align-items: flex-end;
+	font-family: $roboto;
+	font-size: 32px;
+	line-height: 35px;
+	color: $bnw-10;
+	cursor: default;
+}
+.section-header__secondary {
+	display: flex;
+	align-items: flex-end;
+	margin-top: 12px;
+	font-family: $roboto;
+	font-size: 22px;
+	line-height: 23px;
+	color: $bnw-20;
+	cursor: default;
+}
+
+.work__tabs {
+	width: 100%;
+	margin-top: 44px;
+	padding-left: 16px;
+}
+.work__tab-menu {
+}
+.work__tab {
+	position: relative;
+	width: 100%;
+	padding-top: 90px;
+}

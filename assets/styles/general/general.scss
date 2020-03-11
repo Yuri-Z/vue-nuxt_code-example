@@ -1,0 +1,67 @@
+@import  "~/assets/styles/general/variables.scss";
+@import  "~/assets/styles/general/grid.scss";
+@import  "~/assets/styles/general/helpers.scss";
+
+body {
+	margin: 0;
+	font-family: $roboto;
+	color: $bnw-30;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	outline: none;
+	box-sizing: border-box;
+}
+
+.content {
+	max-width: 1140px;
+}
+
+.page-body {
+	display: flex;
+	margin-top: 15px;
+}
+
+/* progress bar */
+
+.progress {
+  background-color: #bde3f3;
+
+	&-span {
+		display: block;
+		background-color: #48afdb;
+		height: 5px;
+	}
+
+	&.green {
+		border: 1px solid $color-26;
+		border-left: none;
+		background-color: white;
+
+		.progress-span {
+			height: 22px;
+			margin-top: -1px;
+			margin-bottom: -1px;
+			background: repeating-linear-gradient(
+				90deg,
+				$bnw-40,
+				$bnw-40 3px,
+				white 3px,
+				white 6px
+			);
+		}
+	}
+}
+
+/* adaptive */
+
+@media screen and (max-width: 1140px) {
+	.content {
+		max-width: 992px;
+	}
+}

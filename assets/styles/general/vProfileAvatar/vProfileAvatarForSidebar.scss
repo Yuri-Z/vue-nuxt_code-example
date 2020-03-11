@@ -1,0 +1,23 @@
+.social-sidebar .avatar-frame {
+	display: flex;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	justify-content: center;
+	
+	.profile-avatar {
+		.profile-avatar__inner-circle {
+			width: calc(100% + 16px);
+		}
+		
+		.profile-avatar__outer-circle {
+			width: calc(100% + 26px);
+		}
+		
+		.circle-progress, .circle-base {
+			stroke-width: 4px
+		}
+	}
+}

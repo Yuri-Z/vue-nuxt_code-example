@@ -1,0 +1,68 @@
+@import "~/assets/styles/general/variables.scss";
+@import "vInput-select";
+@import "vInput-range";
+
+.input-wrapper {
+	position: relative;
+	border: 1px solid $color-50;
+	flex: none;
+	height: 36px;
+	
+	&:focus-within {
+		z-index: 1;
+		border-color: $color-51;
+	}
+	
+	&_select {
+		//z-index: 2;
+	}
+	&_range {
+		border: none;
+	}
+}
+.input-placeholder {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	padding: 8px 5px;
+	font-family: $roboto-light;
+}
+.input {
+	
+	height: 100%;
+	padding: 8px 5px;
+	
+	&_number {}
+	&_text {}
+	&_select {
+		cursor: pointer;
+	}
+	&_add {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+}
+
+.line-of-inputs {
+	display: flex;
+	
+	
+	.input-wrapper + .input-wrapper {
+		margin-left: -1px;
+	}
+	
+	.input-wrapper:first-child {
+		border-bottom-left-radius: 6px;
+		border-top-left-radius: 6px;
+	}
+	
+	.input-wrapper:last-child {
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 6px;
+	}
+}

@@ -1,0 +1,62 @@
+@import "~/assets/styles/general/variables.scss";
+
+.vacancies-block {
+  max-width: 340px;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 0 20px;
+
+  &__title {
+    font-family: $proxima-bold;
+    font-size: 17px;
+    color: $bnw-16;
+    display: inline-block;
+    position: relative;
+
+    &-counter {
+      position: absolute;
+      right: -6px;
+      top: 0;
+      transform: translate(100%);
+      font-family: $roboto;
+      font-size: 14px;
+      background: $color-20;
+      color: $bnw-30;
+      padding: 2px 5px;
+      border-radius: 4px;
+
+      &-long {
+        position: inherit;
+        margin-left: -4px;
+        transform: translate(0);
+      }
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+
+    &-item {
+      margin-bottom: 10px;
+
+      &::before {
+        content: '> ';
+        color: $color-10;
+        font-size: 14px;
+        font-family: $roboto-light;
+      }
+    }
+
+    &-link {
+      font-size: 14px;
+      font-family: $roboto-light;
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    color: $color-10;
+    font-family: $roboto-light;
+  }
+}

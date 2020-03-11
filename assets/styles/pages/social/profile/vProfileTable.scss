@@ -1,0 +1,58 @@
+@import  "~/assets/styles/general/general.scss";
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+	border-collapse: collapse;
+	color: $bnw-00;
+
+	&__list {
+		padding-left: 0;
+		margin: 0;
+		font-family: $roboto-light;
+		font-size: 14px;
+		color: $bnw-10;
+
+		&-item {
+			display: inline-block;
+			margin-left: 20px;
+			position: relative;
+      margin-bottom: 5px;
+
+			&:first-child {
+				margin-left: 0;
+
+				&::before {
+					content: none;
+				}
+			}
+
+			&::before {
+				content: '•';
+				font-size: 18px;
+				position: absolute;
+				top: 46%;
+				transform: translateY(-46%);
+				left: -13px;
+        color: #999997;
+			}
+		}
+	}
+}
+
+.table-striped tbody tr:first-child {
+  background-color: #eff1f7;
+  border: 1px solid #e8e6e6;
+}
+
+.table td, .table th {
+  padding: 1rem 1rem 0.5rem 1rem;
+  vertical-align: top;
+}
+
+.table th {
+  width: 300px;
+  text-align: left;
+  font-weight: normal;
+  color: #656565;
+}

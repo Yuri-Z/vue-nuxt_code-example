@@ -1,0 +1,20 @@
+.sidebar {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	margin-left: 20px;
+}
+
+.bars {
+	display: flex;
+	flex-flow: column;
+}
+.bar {
+	width: 21px;
+	height: 2px;
+	background-color: rgb(153, 153, 151);
+	
+	& + .bar {
+		margin-top: 6px;
+	}
+}

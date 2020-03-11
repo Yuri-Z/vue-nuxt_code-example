@@ -1,0 +1,111 @@
+.login {
+  width: 800px;
+  padding: 0 45px 20px;
+  margin: 20px auto 30px;
+  background-color: #fff;
+  box-shadow: 0px 13px 20px rgba(0,0, 0, 0.2);
+
+  &__header {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #7ebddb;
+    font-weight: 700;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 36px;
+  }
+
+  &__field {
+    position: relative;
+    width: 48%;
+  }
+
+  &__submit {
+    display: block;
+    width: 100%;
+    margin: 45px 0 10px;
+    padding: 20px 0;
+    border: none;
+    background-color: #7ebddb;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #559cbf;
+    }
+  }
+
+  &__input-line {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 27px 10px 10px;
+    border: 1px solid #dbdbdb;
+    font-size: 15px;
+    line-height: 1.38462;
+    color: #202121;
+    background-color: white;
+
+    &:focus,
+    &.focus {
+      border-bottom: 2px solid #7ebddb;
+      padding-bottom: 9px;
+    }
+
+    & + .valid-check {
+      position: absolute;
+      right: 6px;
+      margin-top: -31px;
+
+      .valid,
+      .invalid {
+        display: none;
+        width: 17px;
+      }
+
+      .valid {
+        color: #35a351;
+      }
+
+      .invalid {
+        color: #f00;
+      }
+    }
+
+    &.input-valid {
+      & + .valid-check .valid {
+        display: inline;
+      }
+    }
+
+    &.input-invalid {
+      border-bottom: 2px solid #f00;
+      padding-bottom: 9px;
+
+      & + .valid-check .invalid {
+        display: inline;
+      }
+    }
+  }
+
+  &__remember {
+    margin-top: 20px;
+
+    input[type="checkbox"] {
+      margin-right: 2px;
+      vertical-align: -2px;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin: 15px 0 5px;
+  }
+}
